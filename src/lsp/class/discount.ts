@@ -3,6 +3,7 @@ export abstract class Discount {
 
   calculate(price: number): number {
     return price - price * (this.discount / 100);
+    // throw new Error('Not Implement calculate is class');
   }
 }
 
